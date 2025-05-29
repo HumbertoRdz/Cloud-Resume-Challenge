@@ -2,9 +2,8 @@ name: Desplegar Frontend
 
 on:
   push:
-    paths:
       branches:
-        -main
+      - main
 
 jobs:
   deploy:
