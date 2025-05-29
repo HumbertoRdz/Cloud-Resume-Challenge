@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://hzmpzcka5wpgqwvvtes7uqonfi0ntzjx.lambda-url.us-east-1.on.aws/;">
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      connect-src 'self' https://hzmpzcka5wpgqwvvtes7uqonfi0ntzjx.lambda-url.us-east-1.on.aws/;
+      script-src 'self' https://cdn.jsdelivr.net https://use.fontawesome.com;
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src https://fonts.gstatic.com;
+    ">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Humberto Rodriguez Resume" />
