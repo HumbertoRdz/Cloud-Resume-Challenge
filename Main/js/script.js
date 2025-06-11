@@ -1,5 +1,5 @@
 
-const functionUrl = "https://hzmpzcka5wpgqwvvtes7uqonfi0ntzjx.lambda-url.us-east-1.on.aws/";
+const functionUrl = //"https://hzmpzcka5wpgqwvvtes7uqonfi0ntzjx.lambda-url.us-east-1.on.aws/";
 
 
 async function fetchViewCount() {
