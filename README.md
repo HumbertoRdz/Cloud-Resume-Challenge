@@ -76,7 +76,15 @@ This repository contains my implementation of the [Cloud Resume Challenge](https
 - [DynamoDB Python Guide (boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html)
 
 ---
+## 🎥 Video Walkthrough (Spanish)
 
+I've documented this project in a video series on YouTube (in Spanish), where I guide viewers step-by-step through each part of the Cloud Resume Challenge:
+
+- 🔗 [Parte 1 – S3, CloudFront, Route 53](https://www.youtube.com/watch?v=6_SI_eva7CU)
+- 🔗 [Parte 2 – Contador de visitas, API, DynamoDB](https://www.youtube.com/watch?v=Rml7gEw4Vx0)
+- ⏳ Parte 3 – Coming soon!
+
+---
 ## 🧑‍💻 Author
 
 **Humberto Rodríguez**  
