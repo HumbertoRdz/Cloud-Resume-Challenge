@@ -1,4 +1,5 @@
 # ☁️ Cloud Resume Challenge
+🚀 **Live Demo:** [site.pingtoroot.com](https://site.pingtoroot.com)
 
 This repository contains my implementation of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/), a hands-on project designed to demonstrate proficiency with core cloud services, DevOps practices, and modern web development.
 
@@ -89,7 +90,7 @@ I've documented this project in a video series on YouTube (in Spanish), where I 
 
 **Humberto Rodríguez**  
 Cloud & Cybersecurity Enthusiast  
-[LinkedIn](https://www.linkedin.com/in/humbertoruan/) | [YouTube](https://www.youtube.com/@pingtoroot) | [Website](https://site.pingtoroot.com/)
+[LinkedIn](https://www.linkedin.com/in/humbertoruan/) | [YouTube](https://www.youtube.com/@pingtoroot) 
 
 ---
 
