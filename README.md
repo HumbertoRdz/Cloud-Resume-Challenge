@@ -1,45 +1,93 @@
 # ☁️ Cloud Resume Challenge
 
-This is my take on the [Cloud Resume Challenge](https://site.pingtoroot.com/), a project designed to showcase cloud skills by building and deploying a personal resume website using AWS services and modern DevOps practices.
+This repository contains my implementation of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/), a hands-on project designed to demonstrate proficiency with core cloud services, DevOps practices, and modern web development.
 
-## 🧠 What I Learned
+> **Goal**: Build and deploy a cloud-based resume website using AWS, serverless components, CI/CD, and more.
 
-This project helped me gain hands-on experience with:
+---
 
-- Core AWS services (S3, CloudFront, Route 53, Lambda, DynamoDB, IAM)
-- Backend development using Python and the `boto3` library
-- CI/CD automation with GitHub Actions
-- Infrastructure as Code concepts
-- API creation with AWS Lambda + API Gateway
-- Secure data flow between front-end, backend, and database
-- DNS and SSL/TLS management via ACM and Route 53
+## 🧠 Key Concepts Covered
+
+- Static website hosting on AWS  
+- Domain and SSL via Route 53 + ACM  
+- Serverless backend using Lambda Function URL and DynamoDB  
+- Visitor counter with frontend-backend integration  
+- CI/CD automation using GitHub Actions  
+- Infrastructure as Code (optional stretch)
+
+---
+
+## 📁 Project Structure
+
+```text
+.
+├── Main/                     # Frontend code (HTML, CSS, JS)
+├── .github/workflows/       # GitHub Actions for CI/CD
+├── backend/                 # Lambda function (Python) and test files
+├── infrastructure/          # IaC templates (Terraform or CloudFormation)
+└── README.md                # This documentation file
+```
+## 🚀 Architecture Overview
+```text
+[ Client (Browser) ]
+        |
+        v
+[ CloudFront CDN ]
+        |
+        v
+[ S3 Static Website ] <---> [ Lambda Function URL ] --> [ DynamoDB ]
+```
+- CloudFront: Caches and serves the website globally.
+- S3: Hosts the static resume site.
+- Route 53 + ACM: Custom domain and SSL certificate.
+- Lambda Function URL (Python): Handles requests directly from the frontend.
+- DynamoDB: Stores the count of website visitors.
+- GitHub Actions: Automates deployment on code changes.
+
+## 🔧 Tools & Technologies
+
+**AWS Services**: S3, CloudFront, Route 53, ACM, Lambda (Function URL), DynamoDB  
+**Languages**: HTML, CSS, JavaScript, Python (boto3)  
+**CI/CD**: GitHub Actions  
+**Optional**: Terraform / CloudFormation for Infrastructure as Code
+
+---
+
+## ✅ Completed Milestones
+
+- Resume site designed with HTML/CSS  
+- Hosted on S3 with public access  
+- Secured with HTTPS via ACM + Route 53  
+- Deployed through CloudFront  
+- Visitor counter with JavaScript  
+- Backend using Lambda Function URL (Python) 
+- Visitor data stored in DynamoDB  
+- CI/CD pipeline with GitHub Actions  
+- *(Optional)* IaC with Terraform or CloudFormation  
+- *(Optional)* Unit tests for Lambda function
+
+---
+
+## 📚 Resources Used
+
+- [Cloud Resume Challenge Site](https://cloudresumechallenge.dev/)  
+- [Jake Jarvis’s S3 Sync GitHub Action](https://github.com/jakejarvis/s3-sync-action)  
+- [AWS Documentation](https://docs.aws.amazon.com/)  
+- [DynamoDB Python Guide (boto3)](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html)
+
+---
+
+## 🧑‍💻 Author
+
+**Humberto Rodríguez**  
+Cloud & Cybersecurity Enthusiast  
+[LinkedIn](https://www.linkedin.com/in/humbertoruan/) | [YouTube](https://www.youtube.com/@pingtoroot) | [Website](https://site.pingtoroot.com/)
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** — feel free to fork, reuse, or reference it for your own Cloud Resume Challenge.
 
 
-## 📦 Tech Stack
-
-- **Frontend**: HTML, CSS, JavaScript
-- **Backend**: Python (Lambda), API Gateway
-- **Database**: DynamoDB (on-demand)
-- **CI/CD**: GitHub Actions
-- **Hosting**: AWS S3 + CloudFront
-- **Domain & SSL**: Route 53 + ACM
-
-## 🔄 CI/CD Workflow
-
-The CI/CD pipeline is triggered on pushes to the `main` branch. It performs the following:
-
-- Syncs the frontend code to S3
-- Invalidates the CloudFront cache
-- Ensures the latest version is served instantly
-
-## 🔢 Visitor Counter
-
-A live visitor counter is integrated into the site. It works as follows:
-
-1. Frontend JS calls the deployed API.
-2. The API Gateway triggers a Lambda function.
-3. The Lambda function reads/writes to DynamoDB to update the count.
-4. Response is returned and rendered on the webpage.
-
-
-
+ 
